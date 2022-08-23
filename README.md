@@ -123,7 +123,7 @@ gst-launch-1.0 -v videotestsrc ! autovideosink
 - [CMake] Make sure to delete the cache and/or delete the build folder before configurating if needed.
 
 # Usage
-Once you have installed everything with either the [semi-automatic](#semi-automatic) or the [manual](#manual) installation, you should be able to run our pipelines.
+Once you have installed everything, you should be able to run our pipelines.
 
 First, make sure that you have an NDI stream to provide as input. If you need to create one, you can simply use the **Screen Capture** application shipped with NDI Tools. To do so, open the application, *right-click* on its icon in the taskbar and select `Webcam Video Source` > `[YOUR VIDEO INPUT]`.
 
