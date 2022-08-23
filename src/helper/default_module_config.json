@@ -1,0 +1,39 @@
+{
+    "webcam_index": 1,
+
+    "background_extraction": {
+        "enabled": true,
+
+        "choice": "RVM",
+
+        "NVIDIA_MAXINE_mode": 0,
+
+        "comp_mode": 2,
+        "custom_comp_mode": {
+            "blue": 0,
+            "green": 0,
+            "red": 255
+        },
+
+        "RVM_mode": 0,
+        "RVM_shot": "portrait"
+    },
+
+    "link": {
+        "type": "NDI",
+        "NDI_name": "_tmp_BE",
+        "UDP": {
+            "host": "127.0.0.1",
+            "port": "5000"
+        }
+    },
+
+    "super_resolution": {
+        "enabled": true,
+        "mode": 0,
+        "resolution": 1080
+    },
+
+    "ndi_output": "AdMiRe",
+    "fps": 25
+}

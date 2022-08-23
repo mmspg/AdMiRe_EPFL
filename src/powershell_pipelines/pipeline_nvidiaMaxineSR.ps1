@@ -1,0 +1,2 @@
+param([string]$index_val=1,[string]$fps=25,[string]$user=$env:UserName)
+Start-Process -FilePath "C:\Users\$user\MAXINE-VFX-SDK-master-OSS\build\Release\VideoEffectsApp.exe" -ArgumentList " --webcam --index=$index_val --fps=$fps --effect=SuperRes --resolution=1080 --out_file=""appsrc ! video/x-raw ! ndisinkcombiner name=combiner ! videoconvert ! ndisink ndi-name=SR_output """

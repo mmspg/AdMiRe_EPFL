@@ -1,0 +1,12 @@
+**/.DS_STORE
+**/libndi.dylib
+**/NDIlib.cpython-39-darwin.so
+**/__pycache__
+**/mock_effect_*.sh
+src/powershell_pipelines/*_local.ps1
+src/be_sr_modules/robust_video_matting/checkpoints/*.pth
+src/be_sr_modules/MODNet/pretrained/*.ckpt
+**/*.lib
+**/*.dll
+**/.lock
+src/gst-plugin-ndi/*
