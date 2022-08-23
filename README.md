@@ -1,4 +1,4 @@
-# AdMiRe
+# AdMiRe EPFL
 
 <p align="center">
   <img src="resources/cropped-admire_logosolo_color.png" width="20%" />
