@@ -83,7 +83,7 @@ gst-launch-1.0 -v videotestsrc ! autovideosink
 1. Clone [gst-plugin-ndi](https://github.com/teltek/gst-plugin-ndi) inside `C:/Users/[username]` for example
 2. Download and install Rust from [here](https://www.rust-lang.org/tools/install)
 3. If not already installed, install the regular (not advanced) [NDI sdk](https://downloads.ndi.tv/SDK/NDI_SDK/NDI%205%20SDK.exe)
-4. Copy dll and lib files from bin and lib folder of the NDI sdk installation path to gst-plugin-ndi folder
+4. Copy .dll and .lib files from Bin and Lib folder of the NDI sdk installation path to gst-plugin-ndi folder
 5. Run ```cargo build --release``` from the git repository folder (`C:/Users/[username]/gst-plugin-ndi/` for example)
 6. Move the NDI SDK .dll and .lib files from `C:/Program Files/NDI/NDI 5 SDK/Bin` and `C:/Program Files/NDI/NDI 5 SDK/Lib` to `.../gst-plugin-ndi/target/release`
 7. Add the release folder to the PATH
@@ -103,7 +103,7 @@ gst-launch-1.0 -v videotestsrc ! autovideosink
 
 ### 7. Final steps
 
-1. Run ```git clone https://github.com/rayandaod/AdMiRe.git``` in the folder of your choice
+1. Run ```git clone https://github.com/mmspg/AdMiRe_EPFL.git``` in the folder of your choice
 
 2. Open the Visual Studio 2017 solution file from the NVIDIA MAxine Video Effects SDK Release folder
 
