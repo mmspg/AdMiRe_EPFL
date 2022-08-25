@@ -144,11 +144,29 @@ Once you made sure that you are receiving an NDI stream, open the **Webcam Input
 </p>
 
 ## Powershell pipelines
-The PowerShell pipelines are located in `src/powershell_pipelines`.
+The PowerShell pipelines are located in `src/powershell_pipelines`. Here is the list of pipelines and their goal:
 
-- With default parameters (see below): 
+BE = Background Extraction
+
+SR = Super-Resolution
+
+- `pipeline_MODNet_nvidiaMaxineSR.ps1` - webcam -> MODNet BE -> UDP link -> NVIDIA Maxine SR -> NDI stream
+- `pipeline_byteDanceRvmBE_nvidiaMaxineSR.ps1` - webcam -> RVM BE -> UDP link -> NVIDIA Maxine SR -> NDI stream
+- `pipeline_nvidiaMaxineBE.ps1` - webcam -> NVIDIA Maxine BE -> NDI stream
+- `pipeline_nvidiaMaxineBE_SR.ps1` - webcam -> NVIDIA Maxine BE -> UDP link -> NVIDIA Maxine SR -> NDI stream
+- `pipeline_nvidiaMaxineBE_SR_linkNDI.ps1` - webcam -> MODNet BE -> **NDI** link -> NVIDIA Maxine SR -> NDI stream
+- `pipeline_nvidiaMaxineSR.ps1` - webcam -> NVIDIA Maxine SR -> NDI stream
+
+Parameters:
+- index_val: The webcam index to use as input (default: 0)
+- comp_mode: The compositing mode (default: 2 (green screen)). See `module_config_doc.md` in `src/helper` for more information.
+- fps: The desired framerate (default: 25)
+- output: The output stream type, `ndi` or `udp` (default: `ndi`)
+
+Usage:
+- Default parameters: 
    - *right-click* on the selected pipeline - `Run with PowerShell`
-- With non-default parameters:
+- Non-default parameters:
    - Open a Windows PowerShell window
    - Navigate to the `powershell_pipelines` folder
    - Run the PowerShell script with the desired parameters (see below). 
@@ -164,12 +182,6 @@ After a few seconds, you should see something similar to the screenshot below.
 <p align="center">
   <img src="resources/studio_monitor_output.png" width="50%"/>
 </p>
-
-Parameters:
-   - index_val: The webcam index to use as input (default: 0)
-   - comp_mode: The compositing mode (default: 2 (green screen)). See `module_config_doc.md` in `src/helper` for more information.
-   - fps: The desired framerate (default: 25)
-   - output: The output stream type, `ndi` or `udp` (default: `ndi`)
 
 ## HTTP server and client
 A more user-friendly way to run the modules was implemented using an HTTP client/server communication.
