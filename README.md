@@ -193,3 +193,6 @@ The authors will like to acknowledge contributions from the H2020 Innovation Act
 - [Henrique Piñeiro Monteagudo](https://henriquepm.github.io/about)
 - [Rayan Daod Nathoo](https://github.com/rayandaod/)
 - [Laurent Deillon]()
+- [Changsheng Gao]()
+- [Yuhang Lu]()
+- [Touradj Ebrahimi]()
