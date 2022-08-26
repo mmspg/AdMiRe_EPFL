@@ -169,7 +169,7 @@ Usage:
 - Non-default parameters:
    - Open a Windows PowerShell window
    - Navigate to the `powershell_pipelines` folder
-   - Run the PowerShell script with the desired parameters (see below). 
+   - Run the PowerShell script with the desired parameters (see above). 
    - Example: ```.\pipeline_nvidiaMaxineBE.ps1 -index_val=1 -comp_mode=7```
 
 After a few seconds, you should see something similar to the screenshot below.
